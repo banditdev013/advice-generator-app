@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 20px;
+}
+
+.card{
+    position: relative;
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    background-color: var(--Dark-Grayish-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2.5rem 2.5rem 4rem 2.5rem;
+}
+
+.header-text {
+    text-transform: uppercase;
+    color: var(--Neon-Green);
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.text-random{
+    color: var(--Light-Cyan);
+    padding: 20px 0 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.divider{
+    width: 100%;
+    background-image: url('images/pattern-divider-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.random-btn{
+    position: absolute;
+    bottom: -25px;
+    background-color: var(--Neon-Green);
+    padding: 14px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.random-btn:hover{
+    box-shadow: 0 0 25px hsl(150, 100%, 66%);
+}
+
+.random-btn:active{
+    outline: none;
+}
+
+.attribution {
+    margin-top: 40px;
+    font-size: 10px;
+    text-align: center;
+    color: var(--Light-Cyan);
+}
+
+.attribution a {
+    color: var(--Neon-Green);
+}
+
+@media screen and (max-width: 500px) {
+    .card{
+        padding: 1.5rem 1.5rem 3rem 1.5rem;
+    }
+    .divider{
+        height: 12px;
+    }
+}
